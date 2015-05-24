@@ -1,0 +1,21 @@
+
+<% if user_signed_in? %>
+
+	<h2>Inloggad</h2>
+
+<% else %>
+	
+
+
+	<div class="welcome">
+		
+		<h2>Välkommen till CoachStats</h2>
+
+		<p>Håll koll på all statistik om dina spelare, träningar och matcher.</p>
+		<p><%= link_to 'Registrera', new_user_registration_path, class: "span" %> dig gratis idag!</p>
+	</div>
+
+<% end %>
+
+
+

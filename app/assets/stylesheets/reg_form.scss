@@ -1,0 +1,63 @@
+.reg_form {
+	width: 60%;
+	margin: auto;
+
+	h2 {
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	form {
+		margin: 30px auto;
+		width: 40%;
+		
+		.field, .actions {
+			width: 100%;
+			margin: 10px 0;
+
+			label {
+				font-size: 20px;
+			}
+
+			input {
+				width: 100%;
+				height: 25px;
+				font-size: 17px;
+			}
+			input[type="checkbox"] {
+				width: auto;
+			}
+			
+		}
+
+		.actions {
+
+			input {
+				background-color: #4A90E2;
+				border: 0;
+				color: white;
+				width: auto;
+				padding: 2px;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.links {
+		margin: 10px auto;
+		width: 40%;
+
+		button {
+			height: 30px;
+			width: auto;
+			background-color: #4A90E2;
+			border: 1px solid white;
+
+			a {
+				color: white;
+				text-decoration: none;
+				font-size: 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,78 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+
+	header {
+		width: 100%;
+		background-color: #4A90E2;
+		height: 100px;
+
+		.header_inside {
+			width: 80%;
+			margin: auto;
+
+			h1 {
+				color: white;
+				font-size: 50px;
+				line-height: 100px;
+				float: left;
+
+				a {
+					color: white;
+					text-decoration: none;
+				}
+			}
+
+			button {
+				float: right;
+				height: 30px;
+				width: 100px;
+				background-color: #4A90E2;
+				border: 1px solid white;
+				margin-top: 35px;
+
+				a {
+					color: white;
+					text-decoration: none;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+	.container {
+		width: 80%;
+		margin: auto;
+
+		.welcome {
+			
+			
+
+			h2 {
+				margin: 90px 20px 0 20px;
+				font-size: 40px;
+				text-align: center;
+			}
+
+			p {
+				margin: 20px;
+				font-size: 20px;
+				text-align: center;
+
+				.span {
+					text-decoration: none;
+					font-weight: bold;
+					color: black;
+				}
+			}
+		}
+	}
+}

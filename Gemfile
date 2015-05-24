@@ -24,6 +24,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Devise gem for User Auth
 gem 'devise', '3.4.1'
+# Devise translation gem
+gem 'devise-i18n'
+# i18n
+gem 'i18n', '0.7.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

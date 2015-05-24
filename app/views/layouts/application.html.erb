@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Coach</title>
+  <title>CoachStats</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<header>
+
+		<div class="header_inside">
+			
+			<h1><%= link_to 'CoachStats', root_path %></h1>
+
+			<% if user_signed_in? %>
+				
+				<button><%= link_to 'Logga Ut', destroy_user_session_path, method: :delete %></button>
+			<% else %>
+				<button><%= link_to 'Logga In', new_user_session_path, method: :get %></button>
+			<% end %>
+
+		</div>
+		
+	</header>
+
+	<div class="container">
+		
+		<%= yield %>
+
+	</div>
+
 
 </body>
 </html>
